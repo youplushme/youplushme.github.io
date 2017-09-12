@@ -1,0 +1,11 @@
+html, body {
+    height:100%;
+} 
+body 
+    {
+        background-color: white;
+        background-image: url('https://lh3.googleusercontent.com/RrRrd1QavkFPU_zitDdrCYKdjw7gB3MDWOf-4x0t9lPPY9EuuptS8XCiTy6nNlgYFhHXGgO6VbVwtOL2coD6_auntuphAa542HBeKvvQPIUBoiK76-b0LGSU290BxySWfXDCuK7WEoc');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
