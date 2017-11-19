@@ -1,11 +1,56 @@
-html, body {
-    height:100%;
-} 
-body 
-    {
-        background-color: white;
-        background-image: url('https://lh3.googleusercontent.com/RrRrd1QavkFPU_zitDdrCYKdjw7gB3MDWOf-4x0t9lPPY9EuuptS8XCiTy6nNlgYFhHXGgO6VbVwtOL2coD6_auntuphAa542HBeKvvQPIUBoiK76-b0LGSU290BxySWfXDCuK7WEoc');
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position: top;
-    }
+body {
+	margin: 0;
+}
+@media (max-width: 900px) {
+	body {
+		font-size: 10px;
+	}
+	.biggerScreenOnly {
+    display: none;
+  }
+}
+.landingImage 
+{
+	position: relative;
+	width: 100%;
+	color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+}
+.landingImage img {
+	width: 100%;
+	max-height: 950px;
+}
+.landingImage .title {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 2.5em;
+}
+.landingImage .subtitle {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.8em;
+}
+.howItWorks .mdc-card {
+	max-width: 25em;
+	margin: 20px auto;
+}
+.howItWorks .mdc-card__media {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #DDD;
+  height: 20em;
+}	
+.howItWorks .step1 .mdc-card__media {
+	background-image: url("http://clipartist.net/twitter/Xmas/pitr_teddy_bear_icon_black_white_line_art_scalable_vector_graphics_svg_clip_art_xmas_christmas.png");
+}
+.howItWorks .step2 .mdc-card__media {
+	background-image: url("http://icons.iconarchive.com/icons/tpdkdesign.net/refresh-cl/128/Hardware-Scanner-Camera-icon.png");
+}
+.howItWorks .step3 .mdc-card__media {
+	background-image: url("https://cdn0.iconfinder.com/data/icons/thin-communication-messaging/57/thin-012_mail_envelope_email_sent-512.png");
+}

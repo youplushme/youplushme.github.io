@@ -1,9 +1,97 @@
-<html>
-	<head>
-		<link href="youplushme.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>You Plush Me</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="materialCustom.css">
+    <link rel="stylesheet" href="youplushme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+  	<header class="mdc-toolbar">
+		  <div class="mdc-toolbar__row">
+				<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__title">You Plush Me</span>
+        </section>
+        <div class="biggerScreenOnly">
+	   		  <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit"><a href="#howItWorks">How it works</a></section>
+	   		  <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">Examples</section>
+	  		  <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">Our Story</section>
+	  		  <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">Make your own</section>
+	  		  <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">Pricing</section>
+  		  </div>
+		  </div>
+		</header>
+		<aside class="mdc-temporary-drawer mdc-typography">
+		  <nav class="mdc-temporary-drawer__drawer">
+		    <header class="mdc-temporary-drawer__header">
+		      <div class="mdc-temporary-drawer__header-content">
+		        You Plush Me
+		      </div>
+		    </header>
+		    <nav id="icon-with-text-demo" class="mdc-temporary-drawer__content mdc-list">
+		      <a class="mdc-list-item" href="#">How it works</a>
+		      <a class="mdc-list-item" href="#">Examples</a>
+		      <a class="mdc-list-item" href="#">Our Story</a>
+		      <a class="mdc-list-item" href="#">Make your own</a>
+		      <a class="mdc-list-item" href="#">Pricing</a>
+		    </nav>
+		  </nav>
+		</aside>
+		<div class="landingImage">
+			<img src="https://lh3.googleusercontent.com/RrRrd1QavkFPU_zitDdrCYKdjw7gB3MDWOf-4x0t9lPPY9EuuptS8XCiTy6nNlgYFhHXGgO6VbVwtOL2coD6_auntuphAa542HBeKvvQPIUBoiK76-b0LGSU290BxySWfXDCuK7WEoc">
+	    <div class="title">
+	    	<div>Design your very own</div>
+	    	<div>PLUSH</div>
+	    </div>
+	    <div class="subtitle">We will build it for you</div>
+    </div>
+    <div class="howItWorks demo-grid mdc-layout-grid" id="howItWorks">
+    	<div class="mdc-layout-grid__inner">
+	    	<div class="mdc-card step1 demo-cell mdc-layout-grid__cell">
+				  <section class="mdc-card__primary">
+				    <h1 class="mdc-card__title mdc-card__title--large">Create</h1>
+				    <h2 class="mdc-card__subtitle">Create your own design</h2>
+				  </section>
+				  <section class="mdc-card__media demo-card__16-9-media"></section>
+				  <section class="mdc-card__supporting-text">
+				    You can use your bare hands. Pick up some crayons, pensinls or whatever painting tools you feel more comfortable with and draw your plush on a piece of paper.
+				  </section>
+				</div>
+	    	<div class="mdc-card step2 demo-cell mdc-layout-grid__cell">
+				  <section class="mdc-card__primary">
+				    <h1 class="mdc-card__title mdc-card__title--large">Prepare</h1>
+				    <h2 class="mdc-card__subtitle">Save it into a file</h2>
+				  </section>
+				  <section class="mdc-card__media demo-card__16-9-media"></section>
+				  <section class="mdc-card__supporting-text">
+				    Take a picture or scan it. Save it into a file. Any graphical format will be fine.
+				  </section>
+				</div>
+	    	<div class="mdc-card step3 demo-cell mdc-layout-grid__cell">
+				  <section class="mdc-card__primary">
+				    <h1 class="mdc-card__title mdc-card__title--large">Send</h1>
+				    <h2 class="mdc-card__subtitle">Send us the file</h2>
+				  </section>
+				  <section class="mdc-card__media demo-card__16-9-media"></section>
+				  <section class="mdc-card__supporting-text">
+				    Simply email it to <a href="mailto:info@youplush.me">info@youplush.me</a>. You can also add any specific requirements you may have.
+				  </section>
+				</div>
+			</div>
+    </div>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>
+    	let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-temporary-drawer'));
+			document.querySelector('.mdc-toolbar__menu-icon').addEventListener('click', () => drawer.open = true);
+    </script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106870454-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -12,6 +100,5 @@
 
 		  gtag('config', 'UA-106870454-1');
 		</script>
-
-	</body>
+  </body>
 </html>

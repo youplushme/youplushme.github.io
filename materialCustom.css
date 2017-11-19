@@ -1,0 +1,10 @@
+.mdc-toolbar__section--shrink-to-fit {
+	padding: 0 10px;
+}
+.mdc-card {
+	justify-content: unset;
+}
+.mdc-toolbar a {
+	color: unset;
+	text-decoration: unset;
+}
